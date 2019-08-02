@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/listName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:text="@string/titleList"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_40sdp" />
+
+    <TextView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listName"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="MAIN"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_below="@+id/listName"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listName"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="WEATHER"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tvWeather"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_below="@+id/listName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/colorText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWeather"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@color/cardview_dark_background"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
